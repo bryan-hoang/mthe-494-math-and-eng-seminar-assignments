@@ -4,6 +4,10 @@
 % Get access to chapters in addition to sections.
 \LoadClass[11pt]{memoir}
 
+% The header is empty and the folio (page number) is centered at the bottom of
+% the page.
+\pagestyle{plain}
+
 \RequirePackage[margin=1in]{geometry}
 
 % Standardize section styles.
