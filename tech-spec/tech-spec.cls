@@ -1,8 +1,22 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{tech-spec}[2021/10/18 A LaTeX class to technical specifications for MTHE 494]
 
+\RequirePackage{pgfopts}
+
+\def\ts@classoptions{%
+  11pt,%
+}
+
+\pgfkeys{
+  /tech-spec/.cd,
+  % unknown keys are assumed to be options to be passed to the class
+  .unknown/.code={\edef\ts@classoptions{\ts@classoptions,\pgfkeyscurrentname}},
+}
+
+\ProcessPgfOptions{/tech-spec}
+
 % Get access to chapters in addition to sections.
-\LoadClass[11pt]{memoir}
+\LoadClass[\ts@classoptions]{memoir}
 
 % The header is empty and the folio (page number) is centered at the bottom of
 % the page.
