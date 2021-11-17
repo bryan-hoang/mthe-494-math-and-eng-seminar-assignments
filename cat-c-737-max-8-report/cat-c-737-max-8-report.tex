@@ -1,0 +1,69 @@
+\documentclass[
+  10pt,
+  promotesection,
+  endnotes,
+  draft,
+  % final,
+]{memreport}
+
+\usepackage{bch-style}
+
+\title{
+  MTHE 494 Cat C:\\
+  Boeing 737 MAX 8 Crash
+}
+\author{Bryan Hoang}
+\date{\today}
+
+\addbibresource{\main/bibliography.bib}
+
+\begin{document}
+  \begin{titlingpage}
+    \maketitle
+  \end{titlingpage}
+
+  \mainmatter{}
+
+  % Normalizing date style.
+  % \DTMlangsetup[en-US]{ord=raise}
+  % \DTMsetdatestyle{en-US}
+
+  \section{Background}
+  % On \DTMdisplaydate{2018}{10}{29}{-1}, Lion Mentari Airlines (Lion Air) flight 610 Boeing 737- departed from Soekarno-Hatta International Airport, Jakarta to Depati Amir Airport, Pangkal Pinang. after departure, the aircraft impacted the water in Tanjung Karawang, West Java, killing all people on board\autocite{noauthor_aircraft_2019}.
+
+  \autocite{noauthor_aircraft_2019}
+
+  \section{Chronology of Events}
+  % On \DTMdisplaydate{2018}{10}{29}{-1} at
+
+  On March 10th, 2019 at 05:38:00 UTC, Ethiopian Airlines flight 302 Boeing 737--8 Max departed from Addis Ababa Bole International Airport bound for Nairobi, Kenya Jomo Kenyetta International Airport. The flight had 149 passengers and 8 crew members on board.8 Takeoff was an automatic sequence, and all values appeared normal immediately after liftoff.9
+
+  At 05:38:44, the left and right AOA values began deviating, with the right value reaching 15.3° and left reaching 74.5°. This discrepancy in AOA sensors caused the left stick shaker to activate, warning the crew of an impending stall. Following activation of the stick shakers, the captain called out for autopilot (AP), despite AP issuing multiple warnings. Once AP was engaged, the aircraft experienced small amplitude roll oscillations, which continued after AP was disengaged. At 05:39:45, the captain requested flaps up, and the flaps were retracted.10
+
+  At 05:40:00, an automatic AND activated for 9 seconds and pitched the plane down. The Ground Proximity Warning System sent a ``DON'T SINK'' alert. After the AND stabilizer ended, the pilot activated an electric trim and Aircraft Nose Up (ANU). Five seconds later, another AND stabilizer trim occurred. At 05:40:28 a manual electric trim in ANU direction was executed. A stab trim cut-out was confirmed to disconnect electric trim inputs and stop the MCAS.\@ The First Officer (FO) informed the Air Traffic Control (ATC) of flight control issues.11
+
+  At 05:41:46, the FO confirmed that manual trim was not functional. The FO requested for the plane to return and the ATC approved, so flight heading was adjusted. At 05:43:04, the Captain and FO tried to pitch up, but it was not enough. Two manual electric trims were attempted in the ANU direction and AP engagement was attempted. At 05:43:21, automatic AND occurred, and the plane's vertical speed was greater than 33000 ft/min down.12 At 05:43:44, the plane impacted the ground near Ejere, Ethiopia, killing all 157 individuals on board and destroying the aircraft.13
+  \section{Analysis}
+  \subsection{General}
+  The airplane possessed a valid airworthiness certificate.14 However, in October 2019, Ethiopian Airlines' former chief engineer revealed that maintenance records may have been falsified and plane repairs were often rushed or incomplete to reduce cost.15 As the plane experienced equipment failures, it could not have been deemed airworthy at the time of the flight.
+
+  The flight crew had a combined 8482 flying hours and certifications were up to date. However only 150 hours of flight experience were on a Boeing 737 Max, making the pilot and FO relatively inexperienced on this aircraft.16
+  \subsection{Errors and Violations}
+  Prior to the flight, maintenance concerns with AP existed, but were signed off as repaired. These issues persisted on this flight.17 As well, the erroneous AOA sensors and nonfunctional manual trim were not identified - a gross oversight that occurred from rushing inspections.18
+
+  The crew was not sufficiently prepared to handle failures with the MCAS system. Ethiopian Airlines had incorporated a bulletin regarding uncommanded AND stabilizer trims from Boeing, but it is unclear if the crew was trained on these emergency protocols. 19 Boeing's documentation was incomplete, missing key information such as the need to identify and respond to MCAS failure within 10 seconds.20 Due to the unclear nature of documentation and faulty equipment, the crew failed to adhere to Boeing's Runaway Stabilizer Protocol. They continued to try to use AP and were forced to reengage electric trim as the manual trim did not work, allowing MCAS issues to persist. 21
+
+  Upon hearing the stick shaker, the crew did not address an impending engine stall, nor did they inform the ATC of an emergency. However, the crew did notify the ATC that they were experiencing some control issues and the FO requested a return.22
+  \subsection{Resident Pathogens}
+  The aircraft was not properly maintained, stopping the crew from using equipment that could have prevented the crash. This was direct result of Ethiopian Airline's greed-driven corporate culture, which pressured employees to falsify reports to ensure they had as many planes flying as possible.23
+
+  Boeing's culture of concealment and influence over the FAA also contributed significantly to this crash. Boeing misrepresented the MCAS to save time and money in getting the 737 Max certified. As well, Boeing's power allowed the determination of FAA technical experts to be overruled. This oversight in the FAA failed to ensure public safety. Consequently, the faulty MCAS system was implemented without the need for additional training and without disclosure of its existence.24
+  \subsection{Triple Bottom Line}
+  Boeing's failure to disclose and correct issues with the MCAS, and the FAA's oversight in certifying the 737 Max was a direct result of Boeing's objective to save money and time. 25 Ethiopian Airlines also maximized profits by falsifying maintenance records and not providing appropriate training for employees. 26 These organizations' choice to prioritize wealth had significant ramifications on public safety.
+
+  Due to issues with the MCAS system, as well as failure of plane equipment, the crew was unprepared and unable to prevent the crash. This resulted in the death of 157 individuals, significantly impacted those individuals' families and communities. The crash also produced significant waste, harming the environment, and incurring cleanup costs. Significant costs related to settlements and the resulting grounding of all Boeing 737 Max aircrafts occurred, further making the financial cuts more than unjustified.
+  \section{Recommendations and Conclusion}
+  The crash of Ethiopian Airlines flight 302 can be attributed to significant oversight and malpractice of Boeing, the FAA, and Ethiopian airlines. The Boeing 737 Max had significant technical flaws in the MCAS system that, paired with unaddressed maintenance concerns, made the crash inevitable. For this reason, it is of the upmost importance that all known equipment issues with an aircraft must be resolved before any flights occur. If the issue exists in all planes in the range, the planes must be grounded until the issue can be addressed. It is recommended that Ethiopian implement oversight of maintenance crews and provide relevant, complete training to all employees. Oversight should occur by an external source, as the whistleblower's report places significant doubt on Ethiopian Airline's ethical behaviour. It is also recommended that Boeing accurately documents and discloses all features on their aircrafts. FAA certification cannot occur from a biased agent. These recommendations could assist in preventing future incidents.
+
+  \backmatter{}
+\end{document}
